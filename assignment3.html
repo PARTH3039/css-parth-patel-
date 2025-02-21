@@ -1,0 +1,106 @@
+<!--
+    Name: parth patel 
+    File: css.html
+    Date: 21 February 2025
+    A simple biography page with CSS styling.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Biography</title>
+    <link rel="stylesheet 1" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: hotpink;
+            border-bottom: 10px dotted purple;
+            text-align: center;
+        }
+        h2 {
+            font-style: italic;
+        }
+        ul {
+            background-color: #eeeeee;
+            border: 5px solid purple;
+            padding: 10px;
+            list-style-type: none;
+        }
+        a:hover {
+            color: green;
+        }
+        .bio-box {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: lightgray;
+            padding: 10px;
+            list-style-type: none;
+        }
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .article-img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #bbb;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#bio">Biography</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="bio">
+        <h2>About Me</h2>
+        <div class="bio-box">
+            <p>Hello! I'm a Computer Science student at Durham College. I have experience in Java, HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="photo-gallery">
+            <img src="project1.jpg" alt="Project 1" class="article-img">
+            <img src="project2.jpg" alt="Project 2" class="article-img">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: your.email@example.com</li>
+            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></li>
+        </ul>
+    </section>
+</body>
+</html>
