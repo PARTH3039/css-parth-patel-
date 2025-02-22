@@ -1,0 +1,48 @@
+/* 
+    Name: parth patel 
+    File: part2.css
+    Date: 21 February 2025
+    Styling for the cool-looking box.
+*/
+
+/* Apply a base font */
+html {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the cool box */
+.cool-box {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* 1rem = 16px, so 1.2rem = ~19.2px */
+    background-color: #ff4d4d;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    border: 1px solid #cc0000;
+    position: relative;
+    box-shadow:
+        5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+        inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding a subtle gradient */
+.cool-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+}
